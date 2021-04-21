@@ -13,7 +13,10 @@
 
         <h1>#{testView.string}</h1>
         <h:form id="frmTest">
-            
+            <p:selectCheckboxMenu id="menu" value="#{testView.selectedCities}" label="Cities" emptyLabel="Test" style="width: 15rem"
+                                  filter="true" filterMatchMode="startsWith" panelStyle="width: 15rem" scrollHeight="250">
+                <f:selectItems value="#{testView.cities}"/>
+            </p:selectCheckboxMenu>
         </h:form>
 
     </h:body>
