@@ -13,8 +13,8 @@
 
         <h1>#{testView.string}</h1>
         <h:form id="frmTest">
-            <p:selectCheckboxMenu id="menu" value="#{testView.selectedCities}" label="Cities" emptyLabel="Test" style="width: 15rem"
-                                  filter="true" filterMatchMode="startsWith" panelStyle="width: 15rem" scrollHeight="250">
+            <p:selectCheckboxMenu id="cityOutput" label="Cities" emptyLabel="Test" updateLabel="true" value="#{testView.selectedCities}" multiple="true"
+                                  filter="true" disabled="true" styleClass="disabled-selectCheckboxMenu">
                 <f:selectItems value="#{testView.cities}"/>
             </p:selectCheckboxMenu>
         </h:form>
